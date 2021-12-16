@@ -1,0 +1,18 @@
+.about-me {
+  margin: auto;
+  padding: 2rem 0;
+  max-width: 50%;
+  text-align: center;
+  &-title {
+    font-size: 3.6rem;
+    color: $lightest-slate;
+  }
+  &-description {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+  }
+  @include mobile {
+    max-width: 100%;
+  }
+}

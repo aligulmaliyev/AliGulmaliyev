@@ -1,0 +1,20 @@
+@import "./variables";
+@import "./mixins";
+@import "./base";
+
+// Components
+
+@import "./components/navbar";
+@import "./components/button";
+@import "./components/header";
+@import "./components/section-title";
+@import "./components/about";
+@import "./components/projects";
+@import "./components/project-card.scss";
+@import "./components/contact-me";
+@import "./components/contact-form";
+@import "./components/footer";
+@import "./components/sosial_icons";
+@import "./components/email-link";
+@import "./components/experience";
+@import "./components/tabs";

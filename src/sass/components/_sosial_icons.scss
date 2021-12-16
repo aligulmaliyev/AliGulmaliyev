@@ -1,0 +1,32 @@
+.sosial {
+  display: none;
+  &.vertical {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    left: 3%;
+    &::after {
+      content: "";
+      margin-top: 1rem;
+      width: 2px;
+      height: 120px;
+      background-color: $lightest-navy;
+    }
+    @include tablet {
+      display: none;
+    }
+  }
+  &.horizontal {
+    @include tablet {
+      display: block;
+    }
+  }
+  &-link {
+    display: inline-block;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+}

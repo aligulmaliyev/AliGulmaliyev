@@ -1,0 +1,28 @@
+.email {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  right: 3%;
+  &::after {
+    content: "";
+      margin-top: 1rem;
+      width: 2px;
+      height: 120px;
+      background-color: $lightest-navy;
+  }
+  @include tablet {
+    display: none;
+  }
+
+  &-link {
+    display: inline-block;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    font-family: $font-mono;
+    font-weight: 400;
+    transition: color 0.3s ease;
+    writing-mode: vertical-lr;
+  }
+}

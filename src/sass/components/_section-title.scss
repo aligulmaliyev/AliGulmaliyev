@@ -1,0 +1,23 @@
+.section-title {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  white-space: nowrap;
+  text-transform: capitalize;
+  color: $lightest-slate;
+  & .count {
+    font-size: 1.3rem;
+    font-family: $font-mono;
+    color: $green;
+  }
+  &::after {
+    content: "";
+    margin-left: 1rem;
+    width: 30%;
+    height: 1px;
+    background-color: $lightest-navy;
+    @include mobile {
+      width: 50%;
+    }
+  }
+}

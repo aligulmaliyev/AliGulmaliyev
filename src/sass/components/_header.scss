@@ -1,0 +1,29 @@
+.header {
+  height: calc(100vh - #{$navbar-height});
+  @include flex(inherit, center);
+  flex-direction: column;
+  &-sub-title {
+    margin-bottom: 1.4rem;
+    font-family: $font-mono;
+    font-size: 1.2rem;
+    color: $green;
+  }
+  &-name {
+    margin-bottom: .5rem;
+    font-size: 4.5rem;
+    color: $lightest-slate;
+  }
+  &-specialty {
+    margin-bottom: 1.4rem;
+    font-size: 3.5rem;
+    color: $slate;
+  }
+  &-text {
+    width: 50%;
+    margin-bottom: 3rem;
+    font-family: $font-mono;
+    @include mobile{
+    width: 100%;
+    }
+}
+}

@@ -1,0 +1,52 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  & input,
+  & textarea {
+    outline: none;
+    border: 1px solid $light-slate;
+    width: 100%;
+    padding: 0.6rem;
+    margin: 0.6rem 0;
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: $white;
+    background-color: $light-navy;
+  }
+  & .invalid input,
+  & .invalid textarea {
+    border: 1px solid #ff39396e;
+  }
+  & .spinner {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+    border: 3px solid $green;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s infinite;
+  }
+  & button:disabled {
+    background-color: $dark-slate;
+    color: $white;
+    border-color: transparent;
+    cursor: not-allowed;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+    border-top-color: $light-navy;
+    border-bottom-color: $green;
+    border-right-color: transparent;
+    border-left-color: transparent;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

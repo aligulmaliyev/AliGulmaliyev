@@ -1,0 +1,23 @@
+.btn {
+  display: inline-block;
+  // max-width: max-content;
+  border-radius: 0.2rem;
+  border: 1px solid $green;
+  background-color: unset;
+  color: $green;
+  line-height: 100%;
+  cursor: pointer;
+  transition: background-color, 0.3s, ease;
+  &-contact{
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+    align-self: center;
+    width: 10rem;
+  }
+  &-green {
+    padding: 0.6rem 1rem;
+  }
+  &:hover {
+    background-color: $lightest-navy;
+  }
+}
