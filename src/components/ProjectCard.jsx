@@ -1,21 +1,21 @@
 import React from "react";
 
 const ProjectCard = ({ project }) => {
-  console.log(project)
+  console.log(project);
   return (
     <div className="project-card">
       <div className="project-card-top">
         <i className="folder far fa-folder"></i>
         <span className="group">
           {project.githubLink ? (
-            <a href={project.githubLink} target="_blank">
+            <a href={project.githubLink} target="_blank" rel="noreferrer">
               <i className="fab fa-github"></i>
             </a>
           ) : (
             ""
           )}
           {project.link ? (
-            <a href={project.link} target="_blank">
+            <a href={project.link} target="_blank" rel="noreferrer">
               <i className="far fa-external-link"></i>
             </a>
           ) : (

@@ -33,7 +33,7 @@ const Tabs = ({ experienceData }) => {
                   <span className="position">{item.position}</span>
                   <span className="compant-name">
                     @
-                    <a href={item.companyLink} target="_blank">
+                    <a href={item.companyLink} target="_blank" rel="noreferrer">
                       {item.companyName}
                     </a>
                   </span>

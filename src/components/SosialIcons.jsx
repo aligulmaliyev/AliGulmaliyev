@@ -1,5 +1,4 @@
 import React, { useState, useEffect, Fragment } from "react";
-import { socialMedia } from "../config";
 
 const SosialIcons = ({ positon }) => {
   const isVertical = positon ? "vertical" : "horizontal";
@@ -32,6 +31,7 @@ const SosialIcons = ({ positon }) => {
               key={index}
               className="sosial-link"
               target="_blank"
+              rel="noreferrer"
               href={sosial.url}
             >
               <i className={sosial.icon}></i>

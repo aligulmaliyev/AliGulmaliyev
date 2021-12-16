@@ -9,7 +9,7 @@ const isEmail = (value) => ValidateEmail(value);
 
 export const ContactForm = () => {
   const [loading, setLoading] = useState(false);
-  const [openSnackbar, closeSnackbar] = useSnackbar(options);
+  const [openSnackbar] = useSnackbar(options);
   const form = useRef();
 
   const {
