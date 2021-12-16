@@ -33,16 +33,16 @@ const Projects = () => {
       <SectionTitle count="03">Projects</SectionTitle>
       <div className="projects">
         <div className="projects-cards">
-          {projects
-            .slice(0, showProjectCount)
-            .reverse()
-            .map((projectList, index) => (
-              <Fragment key={index}>
-                {projectList.map((project, index) => (
+          {projects.map((projectList, index) => (
+            <Fragment key={index}>
+              {projectList
+                .reverse()
+                .slice(0, showProjectCount)
+                .map((project, index) => (
                   <ProjectCard key={index} project={project} />
                 ))}
-              </Fragment>
-            ))}
+            </Fragment>
+          ))}
         </div>
         {projects.length <= 6 ? (
           ""
